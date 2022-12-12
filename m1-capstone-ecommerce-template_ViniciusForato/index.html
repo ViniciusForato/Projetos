@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/database.js"></script>
+    <script defer src="js/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>WearTake</h1>
+        <a>Todos</a>
+        <a>Calçados</a>
+        <a>Camisetas</a>
+        <a>Promoções</a>
+    </header>
+    <main class="container">
+        <ul class="produtos">
+        </ul>
+        <aside>
+            <input class="pesquisa" type="text" placeholder="digite aqui sua pesquia" required>
+            <button class="button-pesquisar"type="submit">pesquisar</button>
+            <div>
+                <h4>carrinho de Compras</h4>
+                <ul id="carrinho">
+                </ul>
+            </div>
+            <div class="compra">
+                <h5>produtos no carrinho:</h5>
+                <p class="quantidade-resultado">0</p>
+            </div>
+            <div class="compra">
+                <h5>valor Total:</h5>
+                <p class="valor-resultado">R$ 0,00</p>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>

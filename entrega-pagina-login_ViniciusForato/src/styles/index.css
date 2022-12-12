@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.start{
+    background-color: var(--color-grey-5);
+    width: 700px;
+    height: 625px;
+    text-align: center;
+    padding: 200px 20px;
+    line-height: 150%;
+}
+.start > p{
+    padding: 50px 0;
+    font-size: 20px;
+}
+.start > h1{
+    font-size: 32px;
+    color: var(--color-blue-1);
+}
+.formulary-login{
+    background-color: var(--color-grey-3);
+    width: 665px;
+    height: 625px;
+}
+.formulary-login > h1{
+    color: var(--color-blue-2);
+    text-align: center;
+    padding: 100px 0 ;
+    font-size: 32px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 25px;
+    color: var(--color-grey-6);
+    padding: 0 100px;
+}
+.form > input{
+    height: 30px;
+    width: 350px;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 8px;
+    border: 1px solid var(--color-grey-6);
+}
+.form > input:hover{
+    background-color: var(--color-grey-6);
+}
+.form > a{
+    color: var(--color-blue-2);
+    text-decoration: none;
+    margin-left: 200px;
+}
+.form > button{
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.form > button:hover{
+    background-color: var(--color-blue-1);
+    border: var(--color-blue-1);
+}

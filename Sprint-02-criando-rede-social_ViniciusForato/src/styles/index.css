@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
+}
+main{
+    margin-top: 3rem;
+    position: absolute;
+}
+header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: #212529;
+    color: #fff;
+    height: 40px;
+    width: 100%;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.logo{
+    width: 100px;
+}
+.top > button{
+    background-color: #212529;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+}
+.section-aside{
+    width: 90%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+    gap: 0.2rem;
+}
+img{
+    width: 40px;
+}
+section > h2{
+    margin-left: 3rem;
+    margin-top: -2.7rem;
+}
+section > p{
+    margin-left: 3rem;
+    margin-top: -0.5rem;
+    font-size: small;
+    color: var(--color-paragraph);
+}
+.area-post{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    gap: 3px;
+    padding: 10px 0 0 0;
+}
+.area-post > P{
+    color: var(--color-paragraph);
+}
+.area-post > button{
+    background-color: var(--color-button-blue);
+    color: #fff;
+    width: 60px;
+    font-size: small;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid var(--color-button-blue);
+    cursor: pointer;
+}
+h3{
+    padding: 10px;
+}
+aside{
+    display: flex;
+    flex-direction: row;
+}
+.suggetions{
+    padding: 10px;
+    width: 100%;    
+}
+.suggetions > img{
+    width: 40px;
+    height: 40px;
+}
+.suggetions > h2{
+    font-size: smaller;
+    margin-left: 48px;
+    margin-top: -47px;
+}
+.suggetions > p{
+    color: var(--color-paragraph);
+    margin-left: 50px;
+    margin-top: -5px;
+    font-size: small;
+}
+.suggetions > button{
+    background-color: #fff;
+    color: #212529;
+    border: 1px solid #212529;
+    cursor: pointer;
+    font-size: small;
+    width: 60px;
+    margin-left: 190px;
+}
+.post{
+    margin-top: 20px;
+}
+.post > img{
+    margin-top: -20px;
+}
+.post > h2{
+    margin-left: 50px;
+    margin-top: -50px;
+}
+.post > p{
+    margin-left: 50px;
+}
+.modal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 26, 27, 0.80);
+}
+.modal-post{
+    background-color: #fff;
+    position: relative;
+}
+.posted{
+    padding: 20px;
+}
+.posted > span{
+    position: absolute;
+    top: 10px;
+    left: 280px;
+    font-size: bold;
+    font-size: 20px;
+}
+.posted > h2{
+    font-size: larger;
+}
+.posted > p{
+    margin-top: 10px;
+    color: var(--color-paragraph);
+}
+.posted > button{
+    margin-top: 20px;
+    background-color: #212529;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #212529;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media(min-width: 769px){
+    header{
+        height: 70px;
+    }
+    .top{
+        align-items: center;
+        margin-right: 80px;
+    }
+    section > h2{
+        margin-left: 3rem;
+        margin-top: -2.7rem;
+    }
+    section > p{
+        margin-left: 3rem;
+        margin-top: -10px;
+        font-size: small;
+        color: var(--color-paragraph);
+    }
+    .section-aside{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+    }
+    .section-aside > section{
+        margin-left: 2rem;
+    }
+    aside{
+        position: sticky;
+        margin-top: 2rem;
+        top: 0;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+    }
+    .position-suggetions{
+        position: absolute;
+        top: 0;
+        right: 200px;
+    }
+    .position-seggetions-two{
+        min-height: 100vh;
+    }
+    .position-seggetions-two > h3{
+        margin-top: 30px;
+    }
+    .suggetions > h2{
+        font-size: smaller;
+        margin-left: 48px;
+        margin-top: -50px;
+    }
+    .suggetions > p{
+        color: var(--color-paragraph);
+        margin-left: 50px;
+        margin-top: -5px;
+        font-size: small;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 0.4rem;
+        margin-left: 4rem;
+    }
+    h3{
+        margin-left: 4rem;
+        font-size: 32px;
+    }
+    .title-suggetions{
+        font-size: 16px;
+    }
+    .post{
+        margin-top: 60px;
+    }
+    .post > img{
+        margin-top: -20px;
+    }
+    .post > h2{
+        margin-left: 50px;
+    }
+    .post > p{
+        margin-left: 50px;
+        margin-top: -30px;
+    }
+    .posted > span{
+        position: absolute;
+        top: 20px;
+        left: 680px;
+        font-size: bold;
+        font-size: 20px;
+    }
+}
+    

@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-header : #212529;
+    --color-page : #E9ECEF;
+    --color-description-card : #495057;
+    --color-title-programmer: #212529;
+    --color-type-work: #484FFB;
+}
